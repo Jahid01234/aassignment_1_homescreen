@@ -1,4 +1,5 @@
 import 'package:assignment_1_homescreen/presentation/widgets/categories_type_section.dart';
+import 'package:assignment_1_homescreen/presentation/widgets/custom_bottom_nav_bar.dart';
 import 'package:assignment_1_homescreen/presentation/widgets/header_section_widget.dart';
 import 'package:assignment_1_homescreen/presentation/widgets/movie_card_picker.dart';
 import 'package:assignment_1_homescreen/presentation/widgets/search_box_section.dart';
@@ -153,8 +154,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       fit: BoxFit.fitWidth,
                       text: "Emily in Paris I Season - 1I Episode - 1",
                     ),
-
-
                   ],
                 ),
               ),
@@ -208,11 +207,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
       ),
+      bottomNavigationBar: const CustomBottomNavBar()
+
     );
   }
 }
